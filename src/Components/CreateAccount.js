@@ -9,8 +9,6 @@ const CreateAccount = ({ changeUserName, changeUserBirthday }) => {
     const newUser = await createUser(name.value, birthday.value)
     changeUserName(newUser.name)
     changeUserBirthday(newUser.birthday)
-    // changeUserName(name)
-    // changeUserBirthday(birthday)
   }
 
   return (
